@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    /* ALTERA A MARGEM  */
+    padding: 0;
+    /* Mudou a largura  */
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif,;
+    /* Mudou a fonte da letra  */
+    line-height: 1.4;
+    /* Mudou o espaçamento entre as linhas  */
+    background-color: rgb(5, 0, 0);
+    /* Mudou a cor de fundo  */
+}
+
+nav {
+    position: fixed;
+    /* Os links ficaram no mesmo lugar sem sumir,fixo  */
+    top: 0;
+    /* Espaçamento apartir do topo  */
+    width: 100%;
+    /* ? */
+    background-color: rgb(0, 0, 0);
+    /* Mudou a cor de fundo do navegador  */
+    padding: 20px 0;
+    /* Mudou a altura da cor de fundo do navegador,
+    vertical e horizontal */
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    /* Mudou o estilo do simbolo do lado dos links, marcador de texto */
+    display: flex;
+    /* Deixou os links na mesma linha, organizar uma lista de forma flexivel  */
+    justify-content: center;
+    /* Deixa os links centralizados, so funciona com display flex.  */
+}
+
+nav ul li {
+    margin: 0 30px;
+    /* Mudou a margem entre os links */
+
+}
+
+nav ul li a {
+    color: rgb(152, 24, 211);
+    /* Muda a cor das letras no navegador */
+    text-decoration: none;
+    /* Muda a decoração do texto dos links */
+    font-size: 18px;
+    /* Muda o tamanho da fonte  */
+    padding: 10px;
+    /* muda a vertical/horizontal */
+    transition: rgb(233, 7, 222) 0.3;
+    /* mudar de cor quando passa o mouse, efeito do hover */
+}
+
+nav ul li a:hover {
+    color: rgb(206, 50, 185);
+    /* Fez os links ficarem com uma cor diferente da letra quando passa o mouse por cima  */
+}
+
+section:not(#home) {
+    padding: 100px 20px;/* muda a vertical/horizontal */
+    text-align: center;  /* texto no centro */
+    display: flex;/* organiza os textos */
+    justify-content: center;/* alinhamento horizontal */
+    align-items: center; /* alinha os itens na vertical */
+    height: 100vh;
+    /* fica do tamanho de qualquer tela.  */
+}
+
+#home {
+    /* background-color: black; */
+    background-image: url(https://media.istockphoto.com/id/1461306081/pt/foto/3d-illustration-of-fashion-empty-runway-show-with-spot-light-before-a-fashion-show.jpg?s=612x612&w=0&k=20&c=PQ-WIikTmAt6M3hNYuGklhnGz1Kledyfg6IOLYKsaIc=); /* ? */
+    background-size: cover;/* ? */
+    background-repeat: no-repeat; /* não repete a imagem de fundo */
+    color: rgb(177, 25, 113);/* cor da letra da seção home */
+    height: 100vh;/* altura da imagem */
+    text-align: center; /* texto centralizado */
+    display:flex; /*  'um do lado do outro'*/
+    flex-direction: column;/* direção do flex */
+    justify-content: center; /* alinhamento horizontal */
+    align-items: center;/* alinhou os itens no centro  */
+    font-size: 1.7em; /* tamanho da fonte do conteudo home */
+}
+.content{
+    display: flex;/*  'um do lado do outro'*/
+    flex-direction: row;/* direção do flex */
+    align-items: center ;/* alinhou os itens no centro  */
+    justify-content: center; /* alinhamento horizontal */
+}
+.content img{
+    width:400px;
+
+    height:300px;
+
+    object-fit: cover;
+
+    margin-right:20px;
+
+    border-radius:8px;
+
+}
+.content .text{
+    max-width: 600px;
+
+    text-align: left;
+
+}
+.content .text h2{
+    font-size: 2em;/* Muda o tamanho da fonte  */
+    margin-bottom: 2px;/* margem de baixo  */
+    color: #030005;/* cor */
+    
+}
+.content .text p{
+    font-size: 1.1em;/* Muda o tamanho da fonte  */
+    color: #000000;/* cor */
+
+}
+#criação{
+    background-color: #C626FF;
+    /* Mudou a cor de fundo da seção do services */
+}
+#week{
+    background-color: #9852F2;
+    /* Cor de fundo do about */
+    font-size: 17px;
+}
+#stylist
+{ background-color: #FF38F9;
+    /* Cor de fundo do contact */
+}
+.cta-button{
+    margin-top: 30px;/* margem do topo  */
+    background-color: rgba(68, 16, 209, 0.507);
+    /* Cor de fundo do botão saiba mais  */
+    color: rgb(1, 0, 2);/* cor */
+    padding: 15px 30px;/* muda a vertical/horizontal */
+    font-size: 18px;/* Muda o tamanho da fonte  */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;/* muda o jeito do mouse  */
+    box-shadow: 0px 4px 6px #02000f;
+    transition: background-color 1s ease, transform 1s ease;
+}
+  
+.cta-button :hover{
+    box-shadow:0px 1px 3px rgba(153, 25, 121, 0.733) 
+}
